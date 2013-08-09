@@ -11,7 +11,9 @@ Simply enhance anchors on page with smooth scrolling.
 
 ## API
 
+```js
 new Smoothscroll(element, options);
+```
 
 Default values and options are:
 
