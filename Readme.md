@@ -1,4 +1,3 @@
-
 # Smoothscroll
 
 Simply enhance anchors on page with smooth scrolling.
@@ -27,7 +26,7 @@ var options = {
 
 ## Author(s)
 
-Edgedesign s.r.o. – Dan Sitek
+Edgedesign s.r.o. – [Daniel Sitek](https://github.com/danielsitek)
 
 ## License
 
