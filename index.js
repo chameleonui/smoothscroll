@@ -24,7 +24,7 @@ function Smoothscroll(Element, options){
 Emitter(Smoothscroll.prototype);
 
 Smoothscroll.prototype._onCLick = function() {
-    $('body').on(this.options.clickEvent, this._element, this, function(e){
+    $('html, body').on(this.options.clickEvent, this._element, this, function(e){
         e.preventDefault();
         var link = this;
         e.data._pageScroll(link.hash);
