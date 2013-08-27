@@ -24,7 +24,7 @@ function Smoothscroll(Element, options){
 Emitter(Smoothscroll.prototype);
 
 Smoothscroll.prototype._onCLick = function() {
-    $('html, body').on(this.options.clickEvent, this._element, this, function(e){
+    $('body').on(this.options.clickEvent, this._element, this, function(e){
         e.preventDefault();
         var link = this;
         e.data._pageScroll(link.hash);
@@ -36,7 +36,7 @@ Smoothscroll.prototype._onCLick = function() {
 Smoothscroll.prototype._pageScroll = function(targetHash) {
 	var _this = this;
 	var offset = ($(targetHash).offset().top) - this.options.topOffset;
-    $('body').animate(
+    $('html, body').animate(
     	{ scrollTop : offset },
     	{ 
     		duration: this.options.speed, 
