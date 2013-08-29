@@ -37,13 +37,14 @@ Smoothscroll.prototype._pageScroll = function(targetHash) {
 	var _this = this;
 	var offset = ($(targetHash).offset().top) - this.options.topOffset;
     $('html, body').animate(
-    	{ scrollTop : offset },
-    	{ 
-    		duration: this.options.speed, 
-    		complete: function(){
-	    		_this.emit('end');
-    		} 
-    	});
+        { scrollTop : offset },
+        {
+            duration: this.options.speed,
+            complete: function(){
+                _this.emit('end');
+            }
+        }
+    );
 
     return this;
 };
