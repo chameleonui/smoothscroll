@@ -6,7 +6,7 @@ module.exports = Smoothscroll;
 var defaults = {
 	clickEvent: 'click.smoothscroll',
 	topOffset: '85',
-	speed: 300
+	speed: 400
 };
 
 function Smoothscroll(Element, options){
@@ -18,7 +18,10 @@ function Smoothscroll(Element, options){
 	Emitter.call(this);
 
 	this._element = Element;
-	this._onCLick();
+
+    if (document.querySelectorAll(this._element)[0]) {
+        this._onCLick();
+    }
 }
 
 Emitter(Smoothscroll.prototype);
@@ -27,7 +30,9 @@ Smoothscroll.prototype._onCLick = function() {
     $('body').on(this.options.clickEvent, this._element, this, function(e){
         e.preventDefault();
         var link = this;
-        e.data._pageScroll(link.hash);
+        if (link.hash) {
+            e.data._pageScroll(link.hash);
+        }
     });
 
     return this;
@@ -35,11 +40,18 @@ Smoothscroll.prototype._onCLick = function() {
 
 Smoothscroll.prototype._pageScroll = function(targetHash) {
 	var _this = this;
-	var offset = ($(targetHash).offset().top) - this.options.topOffset;
+    if (targetHash === '#top') {
+        var offset = 0;
+    } else {
+        if (document.querySelectorAll(targetHash)[0]) {
+            var offset = ($(targetHash).offset().top) - this.options.topOffset;
+        }
+    }
     $('html, body').animate(
         { scrollTop : offset },
         {
             duration: this.options.speed,
+            easing: 'swing',
             complete: function(){
                 _this.emit('end');
             }

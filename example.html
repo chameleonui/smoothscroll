@@ -13,33 +13,34 @@
 <body>
 	
 	<div class="page-content">
-		<h1 id="top">Smoothscroll</h1>
+		<h1 id="topsss">Smoothscroll</h1>
 		<ul>
-			<li><a href="#header01">Header 01</a></li>
-			<li><a href="#header02">Header 02</a></li>
-			<li><a href="#header03">Header 03</a></li>
+			<li><a href="#header01" class="scroll">Header 01</a></li>
+			<li><a href="#header02" class="scroll">Header 02</a></li>
+			<li><a href="#header03" class="scroll">Header 03</a></li>
+			<li><a href="#header04" class="scroll">Header 04</a></li>
 		</ul>
 
 		<h2 id="header01">Header 02</h2>
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, magnam quis cupiditate voluptatibus quia magni. Dolores rerum voluptatibus rem atque enim distinctio minima accusamus sunt. Obcaecati, dolor in harum iusto.</p>
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, optio, libero, quasi, distinctio molestias voluptate veritatis minus dolorum delectus corporis consectetur temporibus a? Magnam, expedita, nobis voluptates saepe consectetur tempora.</p>
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, magnam quis cupiditate voluptatibus quia magni. Dolores rerum voluptatibus rem atque enim distinctio minima accusamus sunt. Obcaecati, dolor in harum iusto.</p>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, optio, libero, quasi, distinctio molestias voluptate veritatis minus dolorum delectus corporis consectetur temporibus a? Magnam, expedita, nobis voluptates saepe consectetur tempora. <a href="#top">to Top</a></p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, optio, libero, quasi, distinctio molestias voluptate veritatis minus dolorum delectus corporis consectetur temporibus a? Magnam, expedita, nobis voluptates saepe consectetur tempora. <a href="#top" class="scroll">to Top</a></p>
 		
 		<h2 id="header02">Header 02</h2>
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, magnam quis cupiditate voluptatibus quia magni. Dolores rerum voluptatibus rem atque enim distinctio minima accusamus sunt. Obcaecati, dolor in harum iusto.</p>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, optio, libero, quasi, distinctio molestias voluptate veritatis minus dolorum delectus corporis consectetur temporibus a? Magnam, expedita, nobis voluptates saepe consectetur tempora. <a href="#top">to Top</a></p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, optio, libero, quasi, distinctio molestias voluptate veritatis minus dolorum delectus corporis consectetur temporibus a? Magnam, expedita, nobis voluptates saepe consectetur tempora. <a href="#top" class="scroll">to Top</a></p>
 		
 		<h2 id="header03">Header 03</h2>
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, magnam quis cupiditate voluptatibus quia magni. Dolores rerum voluptatibus rem atque enim distinctio minima accusamus sunt. Obcaecati, dolor in harum iusto.</p>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, optio, libero, quasi, distinctio molestias voluptate veritatis minus dolorum delectus corporis consectetur temporibus a? Magnam, expedita, nobis voluptates saepe consectetur tempora. <a href="#top">to Top</a></p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, optio, libero, quasi, distinctio molestias voluptate veritatis minus dolorum delectus corporis consectetur temporibus a? Magnam, expedita, nobis voluptates saepe consectetur tempora. <a href="#top" class="scroll">to Top</a></p>
 	</div>
 
 	<script src="build/build.js"></script>
 	<script>
 
 		var Scroll = require('smoothscroll');
-		var scroll = new Scroll('a[href*="#"]');
+		var scroll = new Scroll('a.scroll');
 
 	</script>
 </body>
