@@ -2,6 +2,7 @@
 
 * Fixed console error msg when id is targetting on non-existing element
 * Added some testing for preventing expectable errors
+* Added better functionality, public function `scrollTo(hash);`, `easeInOutQuad` easing, speed counter for setting scroll duration,...
 
 
 ### 1.0.1
