@@ -1,3 +1,7 @@
+### 1.0.3
+
+* Updated jquery dependency
+
 ### 1.0.2
 
 * Fixed console error msg when id is targetting on non-existing element

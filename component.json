@@ -2,13 +2,13 @@
   "name": "smoothscroll",
   "repo": "chameleonui/smoothscroll",
   "description": "Enhance anchors on page with smooth scrolling",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "keywords": [
     "scroll",
     "smoothscroll"
   ],
   "dependencies": {
-    "component/jquery": "*",
+    "components/jquery": "1.11",
     "component/emitter": "*",
     "component/event": "*"
   },
