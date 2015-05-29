@@ -6,7 +6,7 @@ Simply enhance anchors on page with smooth scrolling.
 
   Install with [component(1)](http://component.io):
 
-    $ component install chamelenui/smoothscroll
+    $ component install chameleonui/smoothscroll
 
 ## API
 
